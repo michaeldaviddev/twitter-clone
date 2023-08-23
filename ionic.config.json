@@ -1,0 +1,7 @@
+{
+  "name": "twitterClone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
