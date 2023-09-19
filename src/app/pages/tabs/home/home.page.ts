@@ -11,10 +11,12 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class HomePage implements OnInit {
+  prefersDark!: MediaQueryList;
 
   constructor() { }
 
   ngOnInit() {
+    this.prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
   }
 
 }
